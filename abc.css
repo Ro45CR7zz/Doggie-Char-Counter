@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: linear-gradient(135deg, #a8e6cf, #dcedc1);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    border: 4px dotted black;
+}
+
+h1 {
+    color: #2c5530;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.dog-container {
+    background: #f0f8ff;
+    border: 3px solid #87ceeb;
+    border-radius: 15px;
+    padding: 40px 20px;
+    margin-bottom: 30px;
+    min-height: 200px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.dog-wrapper {
+    display: flex;
+    align-items: center;
+    min-width: 100%;
+    height: 100%;
+}
+
+.dog {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+
+.dog-head {
+    width: 70px;
+    height: 50px;
+    background: #DAA520;
+    border-radius: 60% 40% 40% 60%;
+    position: relative;
+    z-index: 3;
+    border: 4px solid #654321;
+}
+
+.dog-eye {
+    width: 8px;
+    height: 8px;
+    background: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+}
+
+.dog-eye.left {
+    left: 15px;
+}
+
+.dog-eye.right {
+    right: 15px;
+}
+
+.dog-nose {
+    width: 6px;
+    height: 4px;
+    background: #6c4d00;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dog-mouth {
+    width: 16px;
+    height: 8px;
+    border: 1.5px solid #000;
+    border-top: none;
+    border-radius: 0 0 15px 15px;
+    position: absolute;
+    top: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+}
+
+.dog-ear {
+    width: 20px;
+    height: 40px;
+    background: #e69f1c;
+    border-radius: 50% 50% 0 50%;
+    position: absolute;
+    top: -30px;
+    border: 3px solid #8B4513;
+}
+
+.dog-ear.left {
+    left: 5px;
+    transform: rotate(-10deg);
+}
+
+.dog-ear.right {
+    right: 5px;
+    transform: rotate(10deg);
+}
+
+.dog-body {
+    width: 100px;
+    height: 40px;
+    background: #DAA520;
+    border-radius: 20px;
+    position: absolute;
+    top: 35px;
+    left: -15px;
+    z-index: 1;
+    transition: width 0.3s ease;
+    border: 4px solid #654321;
+}
+
+.dog-leg {
+    width: 12px;
+    height: 25px;
+    background: #DAA520;
+    border-radius: 0 0 8px 8px;
+    position: absolute;
+    top: 70px;
+    z-index: 2;
+    border: 4px solid #813a08;
+}
+
+.dog-leg.front-left {
+    left: 5px;
+}
+
+.dog-leg.front-right {
+    left: 20px;
+}
+
+.dog-leg.back-left {
+    right: 20px;
+}
+
+.dog-leg.back-right {
+    right: 5px;
+}
+
+.dog-tail {
+    width: 25px;
+    height: 8px;
+    background: #8B4513;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    right: -20px;
+    z-index: 1;
+    animation: wag 1s infinite alternate;
+    border: 1px solid #654321;
+}
+
+@keyframes wag {
+    0% { transform: rotate(-10deg); }
+    100% { transform: rotate(10deg); }
+}
+
+.text-input {
+    width: 100%;
+    min-height: 120px;
+    padding: 15px;
+    border: 2px solid #87ceeb;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: inherit;
+    resize: vertical;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.text-input:focus {
+    border-color: #4682b4;
+}
+
+.counter {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #2c5530;
+    font-weight: bold;
+}
+
+.growth-indicator {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+    font-style: italic;
+}

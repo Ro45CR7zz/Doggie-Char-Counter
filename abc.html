@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doggie Text Length Counter</title>
+    <link rel="stylesheet" href="abc.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🐕 Doggie Text Counter 🐕</h1>
+        
+        <div class="dog-container" id="dogContainer">
+            <div class="dog-wrapper">
+                <div class="dog" id="dog">
+                    <div class="dog-head">
+                        <div class="dog-ear left"></div>
+                        <div class="dog-ear right"></div>
+                        <div class="dog-eye left"></div>
+                        <div class="dog-eye right"></div>
+                        <div class="dog-nose"></div>
+                        <div class="dog-mouth"></div>
+                    </div>
+                    <div class="dog-body" id="dogBody">
+                        <div class="dog-tail"></div>
+                    </div>
+                    <div class="dog-leg front-left"></div>
+                    <div class="dog-leg front-right"></div>
+                    <div class="dog-leg back-left"></div>
+                    <div class="dog-leg back-right"></div>
+                </div>
+            </div>
+        </div>
+
+        <textarea 
+            class="text-input" 
+            id="textInput" 
+            placeholder="Start typing to make the doggie groww! 🐕"
+        ></textarea>
+        
+        <div class="counter" id="counter">
+            Characters: 0
+        </div>
+        
+        <div class="growth-indicator" id="growthIndicator">
+            Doggie will grow every for 10 characters!
+        </div>
+    </div>
+
+    <script src="abc.js"></script>
+</body>
+</html>
