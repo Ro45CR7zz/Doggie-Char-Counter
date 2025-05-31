@@ -1,1 +1,3 @@
 Character Counterrrr........
+counts the no of characterzzz
+the doggie'z length keeps on increasingg
